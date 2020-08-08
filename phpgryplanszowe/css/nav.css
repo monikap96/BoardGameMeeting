@@ -1,0 +1,144 @@
+.navbar {
+    left: 8px;
+    right: 8px;
+    position: fixed;
+    background-color: #003535;
+    z-index: 2;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#bgm label{
+    font-size: 22px;
+}
+#nav-placeholder{
+    padding-bottom: 100px;
+}
+
+.navright label {
+    vertical-align: super;
+    font-size: 18px;
+}
+
+.navbar a{
+    float: left;
+}
+
+.navright a{
+    float: right;
+    width: 80px;
+}
+
+.navbar .anavbar:hover, .navbar .dropdown:hover, .navbar .dropbtn:hover{
+    background-color: #1e5252;
+    transition-duration: 0.4s;
+}
+
+.navbar a, .navright a {
+    
+    color: white;
+    text-align: center;
+    padding: 13px 16px;
+    text-decoration: none;
+    display: block;
+    width: auto;
+    
+}
+.iconNav {
+    width: 23px;
+    height: 23px;
+    color: white;
+    margin: 0px 3px 0px 0px;
+}
+#sort.icon{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+
+#plus.icon, #minus.icon{
+    width: 15px;
+}
+
+.icon {
+    width: 23px;
+    height: 23px;
+    margin: auto;
+}
+
+.imgicons button, .navright a, .navbar a{
+    display: inline-table;
+    align-items:center;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width: fit-content;
+
+}
+  
+.dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    height: 55px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    min-width: 95px;
+}
+
+
+
+.divdropdownlist, .hide {
+    display: none;
+}
+.divdropdownlist a{
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+
+.show {
+    display: block;
+    position: absolute;
+    overflow: auto;
+    width: auto;
+    background-color: #0f4444;
+    min-width: 95px;
+    max-height: 300px;
+}
+
+
+#notifDiv button{
+    min-width: 55px;
+}
+
+
+@media screen and (max-width: 750px) {
+   
+    .navbar  {
+        position: relative;
+        text-align: center; 
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    .navright, .respons a, .divdropdownlist a{
+      
+        position: relative;
+        display: grid;
+        grid-template-columns: auto ;
+        width: 100%;
+        text-align: center; 
+    }
+
+    .dropdown, .divdropdownlist, .navright .dropdown button{
+        width: 100%;
+    }
+}
